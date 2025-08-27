@@ -5,15 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea Hub</title>
+
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body class="manrope-font">
     <!-- Header Section -->
-    <header>
-        <div>
-            <h1>It's good tea time at The Tea House</h1>
-            <p>Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-            <button>Explore More</button>
+    <header class=" min-h-[200px] mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-center">
+        <div class="">
+            <h1 class="text-[80px] font-extrabold">It's good <br> tea time at The <br> Tea House</h1>
+            <p class="text-[18px] my-10">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste
+                Buds.
+            </p>
+            <button class="w-[200px] h-[64px] text-xl text-white rounded-lg bg-gradient-to-r from-orange-400 to-red-500">Explore More <span><i class="fa-solid fa-arrow-right -rotate-45"></i></span></button>
+        </div>
+        <div class="relative">
+            <img src="assets/banner.png" class="relative top-[100px]" alt="">
+            <div class="w-[255px] h-[100px] bg-white flex items-center rounded-lg shadow-md absolute left-[100px]">
+                <span class="text-4xl"><i class="fa-solid fa-star "></i></span>
+                <div class="ml-4">
+                    <p class="text-2xl font-bold">5.00</p>
+                    <p>Trust Pilot Ratings</p>
+                </div>
+            </div>
         </div>
     </header>
 
